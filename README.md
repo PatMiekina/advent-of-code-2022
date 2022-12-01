@@ -31,10 +31,5 @@ A set of 25 challenges released daily from 1st December until Christmas!
                o(  )_-\
                  `"""` `
 
-------------------------------------------------
-Thank you for visiting https://asciiart.website/
-This ASCII pic can be found at
-https://asciiart.website/index.php?art=holiday/christmas/trees
-
 
 [Source](https://adventofcode.com/)
