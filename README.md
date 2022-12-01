@@ -3,7 +3,6 @@
 ## Description
 A set of 25 challenges released daily from 1st December until Christmas!
 
--=[ Christmas tree ]=-  11/97
 
            *             ,
                        _/^\_
