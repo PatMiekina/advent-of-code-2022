@@ -16,7 +16,7 @@ class IDPairsInput
                 ids = range.split("-")
                 pair_array << (ids[0].to_i..ids[1].to_i).to_a
             end
-            self.pairs << pair_array
+            @pairs << pair_array
         end
     end
 end
@@ -30,7 +30,7 @@ class Pair
     end
 
     def contain?
-        (self.range1 - self.range2).empty? || (self.range2 - self.range1).empty? ? true : false
+        (@range1 - @range2).empty? || (@range2 - @range1).empty? ? true : false
     end
 
     def self.contained_pairs

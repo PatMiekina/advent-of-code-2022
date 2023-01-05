@@ -41,6 +41,4 @@ describe "Pair" do
             expect(Pair.contained_pairs).to eq(1)
         end
     end
-
-    
 end

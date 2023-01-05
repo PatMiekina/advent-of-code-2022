@@ -43,11 +43,6 @@ class Game
         player_1_index = player_1_symbols.find_index(@player1.round_symbol)
         player_2_index = player_2_symbols.find_index(@player2.round_symbol)
         
-        # Win combinations:
-        # Y - C; X - A ; Z - B
-        # index_p1 / index_p1 - 1 
-        puts "Player symbols: #{@player1.round_symbol}:#{@player2.round_symbol}"
-        # Draw
         if player_1_index == player_2_index
             @winning_symbol = nil
         elsif (player_1_index == (player_2_index.to_i - 1)) || (player_2_index == 0 && player_1_index == 2)
@@ -55,7 +50,6 @@ class Game
         else
             @winning_symbol = @player1.round_symbol
         end
-        puts "Winning symbol: #{@winning_symbol}"
         @winning_symbol
     end
 
@@ -74,16 +68,12 @@ class Game
 
         @player1.score += @points_for_symbols[@player1.round_symbol.to_sym]
         @player2.score += @points_for_symbols[@player2.round_symbol.to_sym]
-
-        puts "Score before winning: player1: #{@player1.score}; player2: #{@player2.score}"
         if @round_winner
             @round_winner.score += 6
         else
             @player1.score += 3
             @player2.score += 3
         end
-
-        puts "Score after winning: player1: #{@player1.score}; player2: #{@player2.score}"
     end
 
     def final_score
@@ -94,7 +84,6 @@ class Game
 
     def play_a_game
         @game_history.each_with_index do |round, index|
-            puts "Round #{index + 1}"
             self.assign_round_symbols_to_players(round)
             self.find_winning_symbol
             self.find_round_winner
@@ -112,8 +101,3 @@ class Player
         @round_symbol = ""
     end
 end
-
-# game_input = GameInput.new(GAME_TEST)
-game_input = GameInput.new(GAME)
-game = Game.new(game_input.rounds)
-game.play_a_game
