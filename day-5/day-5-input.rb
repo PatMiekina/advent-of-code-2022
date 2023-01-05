@@ -10,6 +10,16 @@ STACKS = [
     ['D', 'R','S','T','J']
 ]
 
+#         [F] [Q]         [Q]        
+# [B]     [Q] [V] [D]     [S]        
+# [S] [P] [T] [R] [M]     [D]        
+# [J] [V] [W] [M] [F]     [J]     [J]
+# [Z] [G] [S] [W] [N] [D] [R]     [T]
+# [V] [M] [B] [G] [S] [C] [T] [V] [S]
+# [D] [S] [L] [J] [L] [G] [G] [F] [R]
+# [G] [Z] [C] [H] [C] [R] [H] [P] [D]
+#  1   2   3   4   5   6   7   8   9 
+
 TEST_STACKS = [
     ['Z', 'N'],
     ['M', 'C', 'D'],
@@ -20,16 +30,6 @@ TEST_INSTRUCTIONS = "move 1 from 2 to 1
 move 3 from 1 to 3
 move 2 from 2 to 1
 move 1 from 1 to 2"
-
-#         [F] [Q]         [Q]        
-# [B]     [Q] [V] [D]     [S]        
-# [S] [P] [T] [R] [M]     [D]        
-# [J] [V] [W] [M] [F]     [J]     [J]
-# [Z] [G] [S] [W] [N] [D] [R]     [T]
-# [V] [M] [B] [G] [S] [C] [T] [V] [S]
-# [D] [S] [L] [J] [L] [G] [G] [F] [R]
-# [G] [Z] [C] [H] [C] [R] [H] [P] [D]
-#  1   2   3   4   5   6   7   8   9 
 
 INSTRUCTIONS = "move 3 from 5 to 2
 move 3 from 8 to 4
